@@ -142,6 +142,8 @@ function Grake()
                     // Resets global var for watching the requests
                     var detectedAccounts = new Array();
                     var accountDetectionCompleted = 0;
+
+                    accounts = [""];
                     
                     // Check feeds
                     for (var i=0; i < accounts.length; i++)
