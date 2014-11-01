@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="css/options.css">
+        <link rel="icon" href="img/small-icon-16px.png" type="image/png" />
+        <title id="widget-title">GMail Notifier</title>
+        <script src="js/ext/jquery.js" type="text/javascript"></script>
+        <script src="locales/lang.default.js" type="text/javascript"></script>
+        <script src="lang.js" type="text/javascript"></script>
+        <script src="js/options.js" type="text/javascript"></script>
+    </head>
+    <body>
+     <audio id="sound_preview">Preview Audio</audio>
+     <div id="content_container">
+            <header>
+                <img src="img/logo-banner.png">
+            </header>
+            <section>
+                <p id="description"></p>
+
+                <h3 id="accounts_header"></h3>
+                <fieldset id="accounts">
+                    <div id="account_descripton"></div>
+                    <div id="wait"></div>
+                    <div id="account_list"></div>
+                </fieldset>
+
+                <h3 id="appearance_header"></h3>
+                <fieldset>
+                    <div class='element'>
+                        <label id="theme_label" for="theme"></label>
+                        <select id="theme" name="theme" type="text"></select>
+                    </div>
+                </fieldset>
+
+                <h3 id="other_header"></h3>
+                <fieldset>
+                    <div class='element'>
+                        <input id="range_update_intervall" type="range" min="5" max="300" step="1"></input>
+                        <label id="range_update_intervall_label" for="range_update_intervall"></label>
+                        <input id="box_update_intervall" name="updateIntervall" type="text"></input><span id="update_intervall_unit"></span>
+                    </div>
+                    <div class='element'>
+                        <input id="enable_sound" name="enableSound" type="checkbox"></input>
+                        <label id="enable_sound_label" for="enableSound"></label>
+                        <div id='sound_container'><select id='sounds' name='soundfile'></select>
+                        <img id='playsound' onclick='PreviewSound();' src='img/media-play.png' style="cursor: pointer;" /></div>                        
+                    </div>
+                    <div class='element'>
+                        <input id="enable_messageactions" name="messageActions" type="checkbox"></input>
+                        <label id="enable_messageactions_label" for="messageActions"><b></b></label>
+                    </div>
+                    <div class='element'>
+                        <input id="mailto_links" name="mailtoLinks" type="checkbox"></input>
+                        <label id="mailto_links_label" for="mailtoLinks"><b></b></label>
+                    </div>
+                    <div class='element'>
+                        <input id="enable_tooltips" name="showTooltip" type="checkbox"></input>
+                        <label id="enable_tooltips_label" for="showTooltip"><b></b></label>
+                    </div>
+                    <div class='element'>
+                        <input id="html_mode" name="basicMode" type="checkbox"></input>
+                        <label id="html_mode_label" for="basicMode"><b></b></label>
+                    </div>
+                    <div class='element'>
+                        <input id="gmail_adfree" name="gmailAdfree" type="checkbox"></input>
+                        <label id="gmail_adfree_label" for="gmailAdfree"><b></b></label>
+                    </div>
+                    <div class='element'>
+                        <input id="debug_mode" name="debugMode" type="checkbox"></input>
+                        <label id="debug_mode_label" for="debugMode"><b></b></label>
+                    </div>
+                </fieldset>
+
+                <div class="button_line">
+                    <button id="close">
+                    <button id="refresh"></button>
+                </div>
+
+            </section>
+
+            <section id="link_section">
+                <a id="link_operapage" href='http://addons.opera.com'></a>&nbsp;|&nbsp;
+                <a id="link_projectpage" href='http://www.codebit.de/oex/google-mail'></a>&nbsp;|&nbsp;
+                <a id="link_feedback" href='http://code.google.com/p/google-mail-oex/issues/entry'></a>
+            </section>
+
+            <footer>
+                <p class="big"><strong><a href="http://www.codebit.de" title='codebit-homepage'>codebit</a>-software 
+                        programmed by <a href="mailto:tom.schreiber@codebit.de" title='Send a mail to the author'>Tom Schreiber</a></strong>
+                </p>
+                <p class="small">
+                    This extension is licensed under the <a href="http://www.opensource.org/licenses/apache2.0.php" title='Show text of the license'>
+                        Apache License 2.0</a>, you can get the source
+                    <a href='http://code.google.com/p/google-mail-oex/source/checkout' title='Source at Google Code'>here</a>
+                </p>
+                <br />
+                <p class="small">
+                    Chinese translation by 嚮陽 | Czech Translation by Matej Szendi | Hungarian Translation by Róbert Tóth<br />
+                    Polish translation by Michał Góral | Russian translation by Dmitry Ryabov |  Simplified Chinese translation by Yangfei Pu  <br />
+                    Spanish translation by J.Pomeyrol | Turkish translation by Yiğit Ateş                    
+                </p>
+                <br />
+                <p class="small">
+                  if you want to translate or improve the translation please mail me or give me feedback on the project page
+                </p>
+            </footer>
+        </div>
+    </body>
+</html>

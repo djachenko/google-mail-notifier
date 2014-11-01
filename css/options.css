@@ -1,0 +1,246 @@
+html {
+    background: #f8f8f8 url(img/options-bg.png) 0 0 repeat;
+    font: 13px/22px "Helvetica Neue", Helvetica, Arial, sans-serif;
+    color: #3d454d;
+    min-height: 100%;
+    overflow-x: hidden;
+    text-shadow: 1px 1px 1px rgba(100, 100, 100, 0.3);
+}
+
+body {
+    max-width: 650px;
+    margin: 25px auto 10px auto;
+    padding: 10px;
+    text-align: left;
+    box-shadow: 0 0 15px #AAA;
+    border-radius: 2px;
+    background-color:  rgba(204, 209, 252, 0.2)
+}
+
+#content_container {
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 30px;
+    border-radius: 2px;
+    box-shadow: 0 0 5px #BBB;
+}
+
+header {
+    display: block;
+    text-align: center;
+    border-bottom: 1px solid rgba(0,0,0,0.15);
+    box-shadow: 0 1px #fff;
+}
+
+h3 {
+    font-weight: lighter;
+    font-variant: normal;
+    letter-spacing: 0.3em;
+    font-size: 110%;
+    margin-bottom: 2px;
+    text-shadow: 0 1px rgba(0,0,0,0.1);
+}
+
+.strong_link {
+    text-decoration: underline;
+}
+
+#wait {
+    background: url('img/ajax-loader.gif') no-repeat center center white;
+    height: 30px;
+    box-shadow: 0 0 15px white; 
+    margin-top: 10px;
+}
+
+.noAccount {
+    padding-left: 10px;
+    color: crimson;
+}
+
+.noAccount a {
+    color: crimson;
+    text-decoration: underline;
+}
+
+.noAccount a:hover {
+    color: crimson;
+    font-weight: bold;
+}
+
+.account_entry {
+    clear: both;
+    margin: 5px 10px;
+}
+
+.account_entry .text {
+    font-weight: lighter;
+    font-variant: normal;
+    letter-spacing: 0.2em;
+    display:inline;
+}
+
+.account_entry .options {
+    float: right;
+}
+
+#theme{
+    width: 150px;
+    margin-left: 20px;
+}
+
+
+#link_section {
+    border-bottom: 1px solid rgba(0,0,0,0.15);
+    border-top: 1px solid rgba(0,0,0,0.15); 
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+#link_section a {
+    color: #3d454d;
+    font-size: 12px;
+    text-decoration: none;
+    font-weight: lighter;
+    font-variant: normal;
+    letter-spacing: 0.2em;
+    margin-right: 10px;
+    text-shadow: 0 1px rgba(0,0,0,0.1);
+}
+
+#link_section a:hover, footer a:hover, fieldset a:hover {
+    color: #3d454d;
+    text-decoration: underline;
+}
+
+footer {
+    display: block;
+    text-align: center;
+    margin: 20px 30px 0 30px;
+    padding-top: 10px;
+    color: #3d454d;
+}
+
+footer a, fieldset a {
+    text-decoration: none;
+    color: #3d454d;
+}
+
+footer p.big {
+    font-size: 13px;
+    margin: 5px 0 3px 0;
+    line-height: 24px;
+    font-weight: lighter;
+    font-variant: normal;
+    letter-spacing: 0.2em;
+}
+
+footer p.small {
+    font-size: 11px;
+    margin: 0;
+    line-height: 15px;
+}
+
+.button_line {
+    padding: 10px 0;
+    text-align: right;
+}
+
+.button_line #close {
+    font-weight: bold;
+}
+
+.options_small, .options_small a {
+    color: #888;
+}
+
+.options_small a:hover {
+    color: blue;
+}
+
+#sound_container{
+ margin-left: 50px;
+ margin-top: 5px;
+}
+
+#sound_container select{
+ width: 200px;
+}
+
+#playsound {
+  float: left;
+  margin-right: 5px;
+}
+
+fieldset {
+    border: 1px solid rgba(150,160,200,0.4);
+    background: rgba(150,160,200,0.1);
+    border-radius: 3px;
+    padding: 10px 20px;
+    box-shadow: 0 0 4px #DDD;
+}
+
+fieldset .element{
+    margin: 15px 5px;
+}
+
+fieldset label {
+    margin-left: 20px;
+}
+
+fieldset *:disabled {
+    opacity: 0.5;
+}
+
+fieldset input {
+    background: #fff;
+    color: #1e3853;
+}
+
+fieldset input[type=text], fieldset input[type=password] {
+    border-radius: 3px;
+    border: 1px solid rgba(80,80,130,0.5);
+    font: 13px/24px "helvetica neue",arial,sans-serif;
+    -o-transition: 0.25s;
+    height: 25px;
+    line-height: 22px;
+    padding: 0 5px;
+    width: 200px;
+}
+
+fieldset input:readonly, fieldset input[type=text]:readonly, fieldset input[type=password]:readonly {
+    background-color: #ddd !important;
+    color: #666 !important;
+}
+
+fieldset input[type=text]:focus, fieldset input[type=password]:focus {
+    border-color: rgba(80,80,130,0.8);
+}
+
+fieldset input[type=radio] {
+}
+
+fieldset input[type=checkbox], fieldset input[type=radio] {
+    border-radius: 2px;
+    border: 1px solid rgba(80,80,130,0.5);
+    background: #fff;
+    box-shadow: 1px 1px 1px rgba(121,153,166,0.3);
+    -o-transition: 0.25s;
+    height: 17px;
+    padding: 3px;
+    width: 20px;
+}
+
+fieldset input[type=radio]:active, fieldset input[type=checkbox]:active {
+    border-color: rgba(80,80,130,0.8);
+    background-color: #d3dbf5;
+}
+
+fieldset input[type=radio]:disabled, fieldset input[type=checkbox]:disabled {
+    background: #fff;
+    border-color: rgba(80,80,130,0.5);
+}
+
+#box_update_intervall {
+    width: 28px;
+    text-align: right;
+}

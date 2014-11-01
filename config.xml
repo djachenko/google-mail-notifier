@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<widget xmlns="http://www.w3.org/ns/widgets" 
+  id="http://www.codebit.de/oex/google-mail"
+  version="3.1.4">
+
+  <!-- Extension Infos -->
+  <name>GMail Notifier</name>
+  
+  <description xml:lang="en">A fast extensions to inform you about unread messages in your GMail-Account(s) with option to achive, delete, etc. the message directly. Your Accounts will be detected automatically when you are logged in.</description>
+  <description xml:lang="de">Diese Erweiterung informiert Sie über ungelesene Nachrichten in Ihrem GMail-Konto mit der Möglichkeit diese direkt zu archivieren, zu löschen, etc. Ihre Konten werden dabei automatisch erkannt wenn Sie eingeloggt sind.</description>
+  <description xml:lang="ru">Простое и быстрое расширение которое сообщает вам количество непрочитанных сообщений в ящике Gmail и показывает их заголовки.</description>
+  <description xml:lang="zh">一個簡單又快速的延伸套件提醒你 Gmail 帳號中有多少尚未讀取的郵件和顯示郵件的標題。你可以設定多個要檢查的帳號還有設定直接用 Gmail 來開啟郵件連結。</description>
+  <description xml:lang="zh-cn">一款快捷的扩展工具，用于通知你 Gmail 邮箱中有多少未读邮件并可以设定直接对邮件进行存档、删除等。该扩展还可以自动检测已登录的 Gmail 帐号。</description>
+  <description xml:lang="pl">Proste i szybkie rozszerzenie informujące o nowych nieprzeczytanych wiadomościach na koncie GMail oraz pokazujące ich tytuły. Możliwa jest obsługa wielu kont i otwieranie odnośników mailowych bezpośrednio w GMailu.</description>
+  <description xml:lang="hu">Egyszerû és gyors kiegészítõ, ami értesít, ha új üzeneted érkezik a GMail fiókodba. Több fiókot is képes kezelni, és beállítható az is, hogy az email linkek (mailto:) közvetlenül a GMailben nyíljanak meg.</description>
+  <description xml:lang="tr">Gmail hesabınızdaki okunmamış iletiler hakkında sizi bilgilendiren ve yeni iletilerin başlıklarını gösteren basit ve hızlı bir eklenti. Çoklu hesap kontrolü yapabilir ve e-posta bağlantılarını Gmail ile açabilirsiniz.</description>
+  <description xml:lang="es">Rápida extensión que te informa de nuevos mensajes en tus cuentas de Gmail, con la opción de archivar, marcar como leído, eliminar, etc, de manera directa. Tus cuentas serán detectadas automáticamente cuando estés identificado.</description>
+  <description xml:lang="cs">Rychlé rozšíření informující o nepřečtených e-mailech s náhledem odesílatele a předmětu na všech GMail účtech s možností jejich archivace, smazání, aj. Pokud jste přihlášeni, budou účty automaticky detekovány.</description>
+
+  <author href="http://www.codebit.de/" email="tom.schreiber@codebit.de">
+    Codebit</author>
+    
+  <icon src="img/big-icon-64px.png"/>  
+  
+  <!-- License -->
+  <license href="http://www.opensource.org/licenses/apache2.0.php" xml:lang="en">
+    Licensed under the Apache License, Version 2.0
+  </license>
+  <license href="http://www.opensource.org/licenses/apache2.0.php" xml:lang="de">
+    Lizensiert unter der Apache License, Version 2.0
+  </license>
+  
+  <!-- Default Values -->
+  <preference name="updateIntervall" value="30" />
+  <preference name="enableSound" value="on" />
+  <preference name="mailtoLinks" value="off" />
+  <preference name="messageActions" value="on" />
+  <preference name="gmailAdfree" value="off" />
+  <preference name="debugMode" value="off" />  
+  <preference name="basicMode" value="off" />
+  <preference name="showTooltip" value="off" />
+  <preference name="theme" value="standard" />  
+  <preference name="soundfile" value="notification1.ogg" /> 
+  
+  <!-- Access Policy -->
+  <feature name="opera:share-cookies" required="true"/>
+  <access origin="https://mail.google.com" />
+  <access origin="https://accounts.google.com" />
+</widget>

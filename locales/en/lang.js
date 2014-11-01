@@ -1,0 +1,1 @@
+// English is the default language, see /lang.default.js for strings

@@ -1,0 +1,13 @@
+Google Mail Notifier
+Standard-Theme by Tom Schreiber
+###############################
+
+
+Thanks to the Mysitemyway Design Team for the GMail-Icon 
+http://icons.mysitemyway.com/
+
+Thanks to Patryk Obara for the improved Icon.
+
+Thanks to PC for the great black icon-theme.
+http://pc.de/icons/
+                
