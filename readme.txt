@@ -6,6 +6,17 @@ Website: http://codebit.de/oex/google-mail
 Author : Tom Schreiber <tom.schreiber@codebit.de>
 
 HISTORY
+
+v3.1.6
+FIXED: Action buttons did not work.
+FIXED: A bit of corrections [ru] translation.
+FIXED: Layout of "standard" theme was breaking while mouse hover on messages.
+FIXED: Window was hiding in 2 seconds while mouse still hover on messages.
+
+v3.1.5-alpha
+FIXED: One account showing three times.
+Function of multiple accounts detection not working now. Now it shows only one account at time.
+
 v3.1.4 (CURRENT STABLE)
 FIXED: Google Accounts are not detected proberly
 
