@@ -25,7 +25,6 @@ div::selection, p::selection, img::selection {
     height: 25px;
     padding: 0 8px;
     margin-bottom: 5px;
-
 }
 
 .entry:hover {
@@ -37,11 +36,13 @@ div::selection, p::selection, img::selection {
 #compose {
     width: 44%;
     display: inline-block;
+    white-space: nowrap;
 }
 
 #pref {
     width: 44%;
     display: inline-block;
+    white-space: nowrap;
 }
 
 .separator {

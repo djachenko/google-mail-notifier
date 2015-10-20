@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
 <widget xmlns="http://www.w3.org/ns/widgets" 
   id="http://www.codebit.de/oex/google-mail"
-  version="3.1.4">
+  version="3.1.6">
 
   <!-- Extension Infos -->
   <name>GMail Notifier</name>
   
   <description xml:lang="en">A fast extensions to inform you about unread messages in your GMail-Account(s) with option to achive, delete, etc. the message directly. Your Accounts will be detected automatically when you are logged in.</description>
   <description xml:lang="de">Diese Erweiterung informiert Sie über ungelesene Nachrichten in Ihrem GMail-Konto mit der Möglichkeit diese direkt zu archivieren, zu löschen, etc. Ihre Konten werden dabei automatisch erkannt wenn Sie eingeloggt sind.</description>
-  <description xml:lang="ru">Простое и быстрое расширение которое сообщает вам количество непрочитанных сообщений в ящике Gmail и показывает их заголовки.</description>
+  <description xml:lang="ru">Простое и быстрое расширение, которое сообщает вам количество непрочитанных сообщений в ящике Gmail и показывает их заголовки.</description>
   <description xml:lang="zh">一個簡單又快速的延伸套件提醒你 Gmail 帳號中有多少尚未讀取的郵件和顯示郵件的標題。你可以設定多個要檢查的帳號還有設定直接用 Gmail 來開啟郵件連結。</description>
   <description xml:lang="zh-cn">一款快捷的扩展工具，用于通知你 Gmail 邮箱中有多少未读邮件并可以设定直接对邮件进行存档、删除等。该扩展还可以自动检测已登录的 Gmail 帐号。</description>
   <description xml:lang="pl">Proste i szybkie rozszerzenie informujące o nowych nieprzeczytanych wiadomościach na koncie GMail oraz pokazujące ich tytuły. Możliwa jest obsługa wielu kont i otwieranie odnośników mailowych bezpośrednio w GMailu.</description>
