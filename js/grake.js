@@ -456,8 +456,8 @@ function Grake()
       else 
       {  
         // Set Url
-        var url = GmailURL + "u/" + actionObj.accountnum + "/h/" + Math.ceil(1000000 * Math.random()) + "/";      
-        var postdata = {t: actionObj.urlid, at: AtValue, act: actionObj.action};     
+        var url = GmailURL + "u/" + actionObj.accountnum + "/h/" + randString(12) + "/";
+        var postdata = {redir: "?&", at: AtValue, tact: actionObj.action, nvp_tbu_go: "OK", t: actionObj.urlid, bact: ""};     
         DebugMessage("Send Action '" + actionObj.action + "' to " + url );
         
         // Send action now
@@ -483,7 +483,7 @@ function Grake()
    function GetAtValue(callback, actionObj) 
    {
       // Set Url
-      var url = GmailURL + "u/" + actionObj.accountnum + "/h/" + Math.ceil(1000000 * Math.random()) + "/?ui=html&zy=c";           
+      var url = GmailURL + "u/" + actionObj.accountnum + "/h/" + randString(12) + "/?ui=html&zy=c";           
       DebugMessage("Get At-Value now from: " + url);
       
       // Get AT-Value
@@ -493,7 +493,7 @@ function Grake()
         success: function (data)
         {
           // Parse Value
-          var matches = data.match(/\at=([^"]+)/);
+          var matches = data.match(/\at=([^&]+)/);
           if (matches != null && matches.length > 0) 
           {
              AtValue = matches[1];
@@ -512,4 +512,16 @@ function Grake()
       if(widget.preferences['debugMode'] && widget.preferences['debugMode'] === "on") 
           opera.postError("Grake," + type + " : " + message);
   }
+  
+  // Function generates a random string for use in unique IDs, etc
+  // @param <int> n - The length of the string
+  function randString(n)
+  {
+    if(!n) n = 5;
+    var text = '';
+    var possible = 'abcdefghijklmnopqrstuvwxyz0123456789';
+    for(var i=0; i < n; i++) text += possible.charAt(Math.floor(Math.random() * possible.length));
+    return text;
+  }
+
 }
