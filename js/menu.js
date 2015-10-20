@@ -12,6 +12,7 @@ var InfoHeight=130; // Info-Height of Menu
 var SingleMessageHeight = 47; // Height of single Message-Entry
 var HideTimeout = 2000;
 var HideTimer;
+var MouseOnBody = true;	// Flag to detect position of mouse (if mouse over the body MouseOnBody = true, else MouseOnBody = false)
 var Accounts;
 var AccountsCount;
 
@@ -40,11 +41,18 @@ window.addEventListener("load", function()
     
     // Close Popup-Box on "Mouse-Leave" after some time
     $('body').mouseleave(function() {
-      HideTimer = window.setTimeout(function(){window.close()}, HideTimeout); 
-      });    
+    	MouseOnBody = false;
+      HideTimer = window.setTimeout(function(){
+        if(MouseOnBody == false) window.close();
+        }, HideTimeout);
+      });
+      
+    // Stop timer closing window
     $('body').mouseenter(function() {
-      clearTimeout(HideTimer); 
-      });          
+    	MouseOnBody = true;
+      clearTimeout(HideTimer);
+      });
+
 }, false);
 
 // Open Google-Mail-Tab
@@ -315,7 +323,7 @@ function ShowMessageOptions(box, link)
   $(box).append(layer);
   
   // Add Tooltips
-  $(".button").tooltip({position: "bottom center", offset: [4, 0], tipClass: "tooltip2", delay:0}); 
+  $(".button").tooltip({position: "top center", offset: [-2, 0], tipClass: "tooltip2", delay:0}); 
   
   return false; 
 }
